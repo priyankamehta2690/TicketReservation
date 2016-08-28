@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Ticket Reservation</string>
+    <string name="create_ticket">Create Ticket</string>
+    <string name="edit_ticket">Edit Ticket</string>
+    <string name="delete_ticket">Delete Ticket</string>
+    <string name="view_ticket">View Ticket</string>
+    <string name="finish_booking">Finish</string>
+    <string name="customer_care">Customer Care: 999-999-9999</string>
+    <string name="name_passenger">Name</string>
+    <string name="source_name">Source</string>
+    <string name="destination_name">Destination</string>
+    <string name="trip_options">Trip: </string>
+    <string name="one_way">One-way</string>
+    <string name="round_trip">Round-trip</string>
+    <string name="return_date"> Return Date</string>
+    <string name="return_time">Time</string>
+    <string name="departure_date">Departure Date</string>
+    <string name="departure_time">Time</string>
+    <string name="print_summary">Print Summary</string>
+    <string name="itinerary">ITINERARY</string>
+    <string name="p_name">Name:</string>
+    <string name="p_source">Source:</string>
+    <string name="p_destination">Destination:</string>
+    <string name="p_departure">Departure:</string>
+    <string name="p_return">Return:</string>
+    <string name="p_finish">Finish</string>
+    <string name="select_ticket">Select Ticket</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+</resources>

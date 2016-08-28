@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ticketreservation.CreateTicketActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_margin="7dp"
+        android:maxLength="20"
+        android:textSize="20sp"
+        android:id="@+id/editText_PassangerName"
+        android:hint="@string/name_passenger" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:textSize="20sp"
+        android:inputType="none"
+        android:editable="false"
+        android:id="@+id/editText_source"
+        android:hint="@string/source_name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_destination"
+        android:inputType="none"
+        android:editable="false"
+        android:layout_margin="7dp"
+        android:textSize="20sp"
+        android:hint="@string/destination_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trip_options"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:id="@+id/textView_trip" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="20sp"
+        android:id="@+id/radiaGrp_tripOption">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/one_way"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:id="@+id/radioButton_onWay"
+            android:enabled="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/round_trip"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:id="@+id/radioButton2_roundTrip" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:inputType="none"
+        android:editable="false"
+        android:hint="@string/departure_date"
+            android:id="@+id/date_departure" />
+
+        <EditText
+        android:layout_width="130dp"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:inputType="none"
+        android:editable="false"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_departureTime"
+        android:hint="@string/departure_time" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:inputType="none"
+            android:editable="false"
+            android:visibility="invisible"
+            android:hint="@string/return_date"
+            android:id="@+id/date_return" />
+
+        <EditText
+            android:layout_width="130dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:inputType="none"
+            android:editable="false"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:hint="@string/return_time"
+            android:id="@+id/time_return" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/print_summary"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:id="@+id/button_printSummary" />
+
+</LinearLayout>

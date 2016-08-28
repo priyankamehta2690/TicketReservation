@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ticketreservation.PrintTicketActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/itinerary"
+        android:id="@+id/textView_pItnary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/p_name"
+        android:id="@+id/textView_pNmae"
+        android:layout_below="@+id/textView_pItnary"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tV_passangerName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView_pItnary"
+        android:layout_toRightOf="@id/textView_pNmae"
+        android:layout_toEndOf="@id/textView_pNmae"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/tV_pSource"
+        android:text="@string/p_source"
+        android:layout_margin="15dp"
+        android:layout_below="@id/textView_pNmae"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@id/tV_pSource"
+        android:layout_toEndOf="@id/tV_pSource"
+        android:layout_below="@id/tV_passangerName"
+        android:id="@+id/tV_passangerSource" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:layout_below="@id/tV_pSource"
+        android:id="@+id/tV_destination"
+        android:text="@string/p_destination" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@id/tV_destination"
+        android:layout_toEndOf="@id/tV_destination"
+        android:layout_below="@id/tV_passangerSource"
+        android:id="@+id/tV_passangerDesination" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:layout_below="@id/tV_destination"
+        android:id="@+id/tV_departure"
+        android:text="@string/p_departure" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@id/tV_departure"
+        android:layout_toEndOf="@id/tV_departure"
+        android:layout_below="@id/tV_passangerDesination"
+        android:id="@+id/tV_passangerDeparture" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:layout_below="@id/tV_departure"
+        android:text="@string/p_return"
+        android:id="@+id/tV_return" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tV_return"
+        android:layout_toEndOf="@id/tV_return"
+        android:layout_below="@id/tV_passangerDeparture"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:id="@+id/tV_passangerReturn" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_pItnary"
+        android:id="@+id/btn_finish"
+        android:text="@string/p_finish" />
+</RelativeLayout>
